@@ -13,7 +13,7 @@ pipeline {
             steps {
                 // Build Docker image
                 script {
-                    docker.build('your-docker-image-name:latest', './path/to/Dockerfile')
+                    docker.build('your-docker-image-name:latest', '.')
                 }
             }
         }
