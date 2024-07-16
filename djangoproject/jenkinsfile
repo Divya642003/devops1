@@ -21,7 +21,7 @@ pipeline {
             steps {
                 // Run tests inside Docker container
                 script {
-                    docker.image('your-docker-image-name:latest').inside {
+                    docker.image('djangoapp:latest').inside {
                         sh 'echo "Running tests inside Docker container"'
                         // Add your test execution commands here
                         // Example: sh 'pytest' or 'npm test'
