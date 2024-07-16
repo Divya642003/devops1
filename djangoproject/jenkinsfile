@@ -12,7 +12,7 @@ pipeline {
             steps {
                 // Build Docker image
                 script {
-                    docker.build('your-docker-image-name:latest', '.')
+                    docker.build('your-docker-image-name:latest', 'djangoproject')
                 }
             }
         }
